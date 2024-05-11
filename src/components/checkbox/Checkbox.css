@@ -1,0 +1,35 @@
+/* Checkbox.css */
+.checkmark {
+    position: relative;
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%; /* Make circular */
+    border: 1px solid #bec0bb; /* Border color */
+    background-color: #fff; /* Background color */
+    margin-right: 20px; /* Add some space between checkbox and label */
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+  }
+  
+  /* Checked state */
+  .checkmark.checked::after {
+    content: "";
+    position: absolute;
+
+    top: 0px; /* Adjust the position */
+    left: 0px; /* Adjust the position */
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: #41a055; /* Change color to indicate checked state */
+   
+  }
+  .hidden-checkbox {
+    position: absolute;
+    opacity: 0;
+    pointer-events: none;
+    
+  }
+  
